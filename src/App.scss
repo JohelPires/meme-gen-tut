@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: space-between;
+    // height: 100vh;
+    // width: 100%;
+    text-align: center;
+}
+
+.navbar {
+    background-image: linear-gradient(45deg, purple, rgb(209, 46, 209));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    h1 {
+        margin: 0;
+        padding: 0px;
+        // text-align: left;
+    }
+}
+
+.form {
+
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 15px;
+
+    max-width: 600px;
+
+    margin: 30px auto;
+
+    label {
+        position: absolute;
+        left: -99999;
+    }
+
+    input {
+        margin: 5px 3px 10px 3px;
+        border-radius: 5px;
+        border: 1px solid rgba($color: gray, $alpha: 0.2);
+        padding: 5px 8px;
+        text-indent: 5px;
+
+        &:focus {
+            outline: none;
+            background-color: #eee;
+        }
+    }
+
+    button {
+        grid-column: 1 / -1;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        background-image: linear-gradient(45deg, purple, rgb(209, 46, 209));
+        ;
+        font-size: 14px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(56, 56, 56);
+    padding: 50px;
+
+    // border-radius: 50%;
+    color: black;
+
+    .circle {
+        display: flex;
+        border-radius: 50%;
+        background-color: white;
+        height: 150px;
+        width: 150px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+}
+
+.bt {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    // position: absolute;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgba(124, 190, 115, 0.5);
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(24, 59, 0, 0.3);
+}
+
+.sandboxform {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: flex-start;
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        box-shadow: 0 3px 15px rgba(128, 128, 128, 0.2);
+        border-radius: 5px;
+        padding: 15px;
+        margin: 5px;
+    }
+
+
+
+    input,
+    textarea {
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        box-shadow: 0 3px 15px rgba(128, 128, 128, 0.2);
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+
+.login {
+    width: 100%;
+    height: 100vh;
+    background-color: coral;
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 50px;
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: white;
+            width: 350px;
+            height: 250px;
+            border-radius: 7px;
+            padding: 15px;
+            margin: auto;
+            box-shadow: 0 5px 15px rgba($color: #333, $alpha: 0.3);
+
+            label {
+                margin: 10px;
+            }
+
+            input {
+                margin: 10px;
+                padding: 5px;
+            }
+
+        }
+
+
+    }
+
+
+}
+
+
+.api {
+    text-align: left;
+}
+
+.window-tracker-tutorial {
+    background-color: coral;
+    height: 100vh;
+    color: white;
+
+    button {
+        margin: 40px;
+        padding: 10px 30px;
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+}
